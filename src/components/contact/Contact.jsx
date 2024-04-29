@@ -3,23 +3,23 @@ import css from "./Contact.module.css";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsSlice";
 
-
-const Contact = ({ contact }) => {
+const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
-
-  const handleDeleteContact = () => dispatch(deleteContact(contact.id));
 
   return (
     <div className={css.contact}>
       <h2 className={css.name}>
         <FaUser />
-        {contact.name}
+        {name}
       </h2>
       <p className={css.number}>
         <FaPhone />
-        {contact.number}
+        {number}
       </p>
-      <button className={css.deleteBtn} onClick={handleDeleteContact}>
+      <button
+        className={css.deleteBtn}
+        onClick={() => dispatch(deleteContact(id))}
+      >
         Delete
       </button>
     </div>
