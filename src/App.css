@@ -30,3 +30,9 @@ ol {
 .read-the-docs {
   color: #888;
 }
+
+.text {
+  font-weight: 700;
+  font-size: 18px;
+  color: red;
+}

@@ -22,8 +22,8 @@ const App = () => {
       <h1 className="title">Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      {isLoading && <p>Loading...</p>}
-      {error && <p>Something went wrong...</p>}
+      {isLoading && <p className="text">Loading...</p>}
+      {error && <p className="text">Something went wrong...</p>}
       {contacts.length && <ContactList />}
     </div>
   );

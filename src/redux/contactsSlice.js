@@ -31,7 +31,7 @@ const contactsSlice = createSlice({
         state.error = payload;
       })
       .addCase(deleteContact.pending, (state) => {
-        state.isLoading = true;
+        state.isLoading = false;
         state.error = null;
       })
       .addCase(deleteContact.fulfilled, (state, { payload }) => {
