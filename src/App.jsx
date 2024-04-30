@@ -1,5 +1,3 @@
-import ContactForm from "./components/contactForm/ContactForm";
-import SearchBox from "./components/searchBox/SearchBox";
 import ContactList from "./components/contactList/ContactList";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,8 +19,6 @@ const App = () => {
   return (
     <div>
       <h1 className="title">Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
       {error && <p>Something went wrong...</p>}
       {isLoading && <p>Loading...</p>}
       {contacts.length && <ContactList />}
