@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { addContact, deleteContact, fetchContacts } from "./operations";
 
-const contactsSlice = createSlice({
+export const contactsSlice = createSlice({
   name: "contacts",
   initialState: { items: [], isLoading: false, error: null },
   extraReducers: (builder) =>
