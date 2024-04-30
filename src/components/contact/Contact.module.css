@@ -37,8 +37,8 @@
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: -0.02em;
-    border: 2px solid #a0a0a3;
-    background-color: rgba(232, 232, 237, 0.558);
     border-radius: 4px;
+    background-color: inherit;
+    color: red;
     margin-right: 10px;
 }
